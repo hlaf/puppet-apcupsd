@@ -48,7 +48,7 @@ class apcupsd (
 ) inherits apcupsd::params {
 
   # Validate inputs
-  validate_slength($upsname, 8)
+  #validate_slength($upsname, 8)
 
   unless $upscable in ['simple', 'smart', 'ether', 'usb'] {
     fail('$upscable must be one of simple, smart, ether, usb')
